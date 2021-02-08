@@ -62,8 +62,6 @@ public class TaskController {
     @PutMapping
     public void changeStatus(Authentication authentication, @RequestParam State state) {
         User user = (User) authentication.getPrincipal();
-
-
-
+        taskService.changeTaskStatus();
     }
 }

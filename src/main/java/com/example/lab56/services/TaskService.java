@@ -45,4 +45,8 @@ public class TaskService {
     public Task getTaskById(String id) {
         return taskRepository.findTaskById(id);
     }
+
+    public void changeTaskStatus (User user, Task task) {
+
+    }
 }
